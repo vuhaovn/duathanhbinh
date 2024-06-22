@@ -1,8 +1,26 @@
 @charset "utf-8";
 
-.font-lob,
-h1, h2, h3, h4, h5, h6 {
+.font-lob {
   font-family: 'Lobster', cursive;
+}
+
+.link-arrow {
+  position: relative;
+  padding-left: 20px;
+  &:before {
+    content: 'arrow_forward'; /* Tên biểu tượng Material Icons */
+    font-family: 'Material Icons'; /* Sử dụng font Material Icons */
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    transition: left 0.3s;
+  }
+
+  &:hover {
+    &:before {
+      left: 5px;
+    }
+  }
 }
 
 .header_navigation {

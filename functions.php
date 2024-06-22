@@ -35,7 +35,7 @@ function duathanhbinh_register_style()
 {
   $version = wp_get_theme()->get('Version');
   wp_enqueue_script('tailwind-cdn', 'https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp', array(), 'v3.3.3',);
-  wp_enqueue_script('jquery-cdn', 'https://code.jquery.com/jquery-3.7.0.min.js', array(), 'v3.7.0',);
+  // wp_enqueue_script('jquery-cdn', 'https://code.jquery.com/jquery-3.7.0.min.js', array(), 'v3.7.0',);
   wp_enqueue_style('material-font', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '', 'all');
   wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array(), 'swiper@10', 'all');
   wp_enqueue_style('tailwind-local', get_template_directory_uri() . '/assets/css/tailwind.css', array(), $version, 'all');
